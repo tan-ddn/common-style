@@ -1,87 +1,86 @@
 /*GLOBAL*/
 h1, h2, h3, h4, h5, h6 {
-  color: inherit;
-  line-height: 1.4;
-  padding-bottom: 20px;
-  margin: 0;
+    color: inherit;
+    line-height: 1.4;
+    padding-bottom: 20px;
+    margin: 0;
 }
 
 p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .btn {
-  display: inline-block;
-  padding: .6em 1.5em;
-  margin: 10px 0;
-  border: 1px solid;
-  transition: all .3s ease-in;
+    display: inline-block;
+    padding: .6em 1.5em;
+    margin: 10px 0;
+    border: 1px solid;
+    transition: all .3s ease-in;
 }
 
 /*ADDITIONAL STYLE*/
 .dark-overlay, .light-overlay {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 .dark-overlay:before, .light-overlay:before {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0,0,0,0.4);
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
 }
 .light-overlay:before {
-  background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.7);
 }
 .dark-overlay > *, .light-overlay > * {
-  position: relative;
-  z-index: 3;
+    position: relative;
+    z-index: 3;
 }
 
 .lsow-dark-bg, .lsow-dark-bg p {
-  color: #eee;
+    color: #eee;
 }
 .lsow-dark-bg h1, .lsow-dark-bg h2, .lsow-dark-bg h3, .lsow-dark-bg h4, .lsow-dark-bg h5, .lsow-dark-bg h6, 
 .lsow-dark-bg b, .lsow-dark-bg strong {
-  color: #fff;
+    color: #fff;
 }
 
 .title-center .widget-title {
-  text-align: center;
+    text-align: center;
 }
 
 .img-blk-cover, .img-blk-contain {
-  position: relative;
-  overflow: hidden;
-  height: 0;
-  padding-bottom: 67%;
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 67%;
 }
 .img-blk-cover img, .img-blk-contain img {
-  position: absolute;
-  top: -99px;
-  right: -99px;
-  bottom: -99px;
-  left: -99px;
-  margin: auto;
-  width: auto;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
-  max-width: 150%;
-  max-height: 150%;
+    position: absolute;
+    top: -99px;
+    right: -99px;
+    bottom: -99px;
+    left: -99px;
+    margin: auto;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 150%;
+    max-height: 150%;
 }
 .img-blk-contain img {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  min-width: 67%;
-  min-height: 67%;
-  max-width: 100%;
-  max-height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-width: 67%;
+    min-height: 67%;
+    max-width: 100%;
+    max-height: 100%;
 }
-
 
