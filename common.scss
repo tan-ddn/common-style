@@ -1,3 +1,5 @@
+/*VARIABLES*/
+
 /*GLOBAL*/
 h1, h2, h3, h4, h5, h6 {
 	color: inherit;
@@ -12,13 +14,42 @@ p {
 	margin-top: 20px;
 	}
 }
-
-.btn {
+ 
+ %button {
 	display: inline-block;
+	font-size: inherit;
+	font-weight: 400;
+	line-height: 1.4;
+	letter-spacing: 0;
 	padding: .6em 1.5em;
 	margin: 10px 0;
-	border: 1px solid;
 	transition: all .3s ease-in;
+ }
+
+.btn, .button, input[type=button], input[type=submit] {
+	@extend %button;
+	color: $primary-color;
+	border: 1px solid $primary-color;
+	body & {
+		background: transparent;
+	}
+	&:hover {
+		color: #fff;
+		body & {
+			background: $primary-color;
+		}
+	}
+}
+input[type=reset] {
+	@extend %button;
+	color: $primary-color;
+	border: 1px solid $primary-color;
+}
+
+@mixin d-flex($align, $justify) {
+	display: flex;
+	align-items: $align;
+	justify-content: $justify;
 }
 
 @mixin img-blk-cover($ratio) {
